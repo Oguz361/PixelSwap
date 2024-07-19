@@ -1,0 +1,411 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: transparent;
+  color: #ffffff;
+  overflow: visible;
+  position: relative;
+}
+
+.header {
+  margin-bottom: 110px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.textContent {
+  margin: 10px 0;
+  width: 50%;
+  text-align: left;
+  z-index: 1;
+  margin-left: 15px;
+  margin-top: 125px;
+}
+
+.buttonContainer {
+  margin-bottom: 100px;
+}
+
+.logoContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  width: 20px;
+  height: auto;
+  position: absolute;
+  animation: blink 2s infinite;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 20px #c0ade9);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container h1 {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+
+.container p {
+  max-width: 600px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: #fff;
+  background: linear-gradient(270deg, #a881fc, #430cba);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 3s ease infinite;
+}
+
+.tradeButton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #a881fc;
+  background-color: transparent;
+  border: 2px solid #a881fc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tradeButton:hover {
+  background-color: rgba(168, 129, 252, 0.1);
+}
+
+.advantages {
+  width: 100%;
+  padding: 100px 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.advantages .container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.advantages .advantageRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.advantages .advantageTitle {
+  background: transparent;
+  padding: 40px;
+}
+
+.advantages .advantage {
+  background-color: rgba(20, 17, 20, 0.6);
+  padding: 60px;
+  cursor: default;
+  height: auto;
+  padding-left: 30px;
+}
+
+.advantages .advETitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.advantages .advEAbout {
+  color: #7a7580;
+  font-size: 12px;
+  line-height: 1.7;
+  font-weight: 300;
+  letter-spacing: -0.29px;
+}
+
+.learnMoreButton {
+  margin-top: 1rem;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #a881fc;
+  background-color: transparent;
+  border: 1px solid #a881fc;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learnMoreButton:hover {
+  background-color: rgba(168, 129, 252, 0.1);
+}
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.popup {
+  background: #191b1f;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 80%;
+  position: relative;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s ease;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.popupHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.popupContent {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.popupTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #a881fc;
+  margin-left: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.ExploreWorld {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.leftContent,
+.rightContent {
+  flex: 1;
+  padding: 15px;
+}
+
+.leftContent h1 {
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+.rightContent p {
+  font-size: 1em;
+}
+
+.leftContent p {
+  font-size: 1em;
+}
+
+.exploreButton {
+  margin-top: 8px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #a881fc;
+  border: 0.5px solid #a881fc;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.featureSection {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.featureSection h1 {
+  font-size: 2.5em;
+  padding-bottom: 30px;
+}
+
+.featureItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.featureIcon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.featuresContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 480px) {
+  .textContent h1 {
+    font-size: 2rem;
+  }
+
+  .textContent p {
+    font-size: 1.25rem;
+  }
+
+  .advantage {
+    width: 100%;
+  }
+
+  .popup {
+    padding: 1rem;
+  }
+}
+
+.faqSection {
+  margin-top: 120px;
+  padding: 40px 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.faqHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.faqHeader {
+  font-size: 5rem;
+  color: #fff;
+  margin-right: 150px;
+}
+
+.faqSubheader {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.faqContent {
+  display: flex;
+  align-items: flex-start;
+}
+
+.faqGroupHeaderContainer {
+  flex-shrink: 0;
+}
+
+.faqGroupHeader {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.faqContainer {
+  margin-left: 220px;
+  margin-top: 20px;
+}
+
+.faqItem {
+  margin-bottom: 10px;
+}
+
+.faqQuestion {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  background-color: rgba(168, 129, 252, 0.1);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqToggle {
+  font-size: 1.5rem;
+  color: #a881fc;
+}
+
+.faqAnswer {
+  display: none;
+  padding: 15px;
+  background-color: rgba(20, 17, 20, 0.8);
+  color: #7a7580;
+  border-radius: 0 0 5px 5px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.showAnswer {
+  display: block;
+}

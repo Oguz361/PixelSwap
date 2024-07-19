@@ -1,0 +1,158 @@
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Changed from row to column */
+  justify-content: flex-start; /* Changed to flex-start to align items to the top */
+  align-items: center;
+  min-height: 100vh;
+  background-color: #131313;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Title */
+.title {
+  margin-top: 120px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Highlight */
+.highlight {
+  color: #fff; /* Base color */
+  background: linear-gradient(270deg, #a881fc, #430cba);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 3s ease infinite;
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Description */
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  text-align: center; /* Centered text */
+}
+
+/* Pool Container */
+.pool-container {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Set to 100% width */
+  max-width: 1200px;
+  margin: 20px 0; /* Adjusted margin */
+}
+
+/* Pool Header */
+.pool-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 2px solid #333;
+}
+
+/* Pool Row */
+.pool-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+/* Pool Column */
+.pool-column {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Action Button */
+.action-button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+.action-button:disabled {
+  background-color: #333;
+  cursor: not-allowed;
+}
+
+/* Add/Remove Section */
+.add-remove-section {
+  margin: 20px 0;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Set to 100% width */
+  max-width: 600px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Input */
+.input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: white;
+}
+
+/* Balance Section */
+.balance-section {
+  margin: 20px 0;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Set to 100% width */
+  max-width: 600px;
+}
+
+/* Balance Row */
+.balance-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+/* Balance Label */
+.balance-label {
+  flex: 1;
+}
+
+/* Balance Value */
+.balance-value {
+  flex: 1;
+  text-align: right;
+}
