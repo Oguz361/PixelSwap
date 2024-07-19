@@ -15,7 +15,6 @@ Before you can start the Pixel Swap DEX, make sure you have the following softwa
 
 - **Node.js:** [Install Node.js](https://nodejs.org/)
 - **npm:** Usually comes with Node.js.
-- **React:** Part of the project, no separate installation required.
 
 ## Installation
 
